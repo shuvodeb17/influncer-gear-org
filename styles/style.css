@@ -78,6 +78,24 @@
   height: 414px;
 }
 
+/* company logo section styles */
+.company-logo-wrapper {
+}
+.all-logo-company {
+  width: 1110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.single-logo img {
+}
+
 /* Responsive Mobile device*/
 @media only screen and (max-width: 576px) {
   /* header section */
@@ -131,13 +149,23 @@
   .banner-description {
     font-size: 14px;
   }
+
+  /* company logo section styles */
+  .all-logo-company {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .single-logo {
+    margin-bottom: 1em;
+  }
 }
 
 /* Responsive tablet device */
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   /* header section */
   .container {
-    padding: 35px 16px;
+    padding: 7px 16px;
   }
   .logo {
     font-size: 1em;
@@ -162,5 +190,19 @@
   .banner-camera-img {
     width: 330px;
     height: 330px;
+  }
+
+  /* company logo section styles */
+  .all-logo-company {
+    width: 100% !important;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .all-logo-company {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
