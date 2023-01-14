@@ -7,3 +7,160 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+:root {
+  --black: #3a3a3a;
+  --button-background: #e02c6d;
+}
+
+/* header styles */
+.container {
+  padding: 87px 120px 0px 120px;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 22px;
+  color: var(--black);
+}
+.logo-bars li {
+  display: none;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  list-style-type: none;
+  padding: 0px 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+/* banner section styles */
+.banner-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 133px;
+  height: 80vh;
+}
+.banner-title {
+  font-size: 42px;
+  margin-bottom: 16px;
+  color: var(--black);
+}
+.banner-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: var(--black);
+}
+.banner-btn {
+  background-color: var(--button-background);
+  padding: 10px 24px;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+}
+.banner-right {
+  background-image: url("../assests/images/Circle\ design.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner-camera-img {
+  width: 440px;
+  height: 414px;
+}
+
+/* Responsive Mobile device*/
+@media only screen and (max-width: 576px) {
+  /* header section */
+  .container {
+    padding: 35px 16px;
+  }
+  .logo-bars {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .logo-bars li {
+    list-style-type: none;
+    display: block;
+  }
+  .logo {
+    font-size: 1em;
+  }
+  .menu ul {
+    display: flex;
+    align-items: center;
+  }
+  .menu ul li a {
+    font-size: 0.8em;
+  }
+  .menu-bars {
+    display: block;
+  }
+  .search-icon,
+  .menu-item {
+    display: none;
+  }
+
+  /* banner section */
+  .banner-wrapper {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 14px;
+    margin-top: 80px;
+  }
+  .banner-camera-img {
+    width: 17.625em;
+    height: 14.875em;
+  }
+  .banner-left {
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 28px;
+  }
+  .banner-description {
+    font-size: 14px;
+  }
+}
+
+/* Responsive tablet device */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  /* header section */
+  .container {
+    padding: 35px 16px;
+  }
+  .logo {
+    font-size: 1em;
+  }
+  .menu ul li a {
+    font-size: 0.8em;
+  }
+
+  /* banner section */
+  .banner-wrapper {
+    gap: 1%;
+  }
+  .banner-title {
+    font-size: 2em;
+  }
+  .banner-description {
+    font-size: 0.8em;
+  }
+  .banner-btn {
+    padding: 7px 13px;
+  }
+  .banner-camera-img {
+    width: 330px;
+    height: 330px;
+  }
+}
