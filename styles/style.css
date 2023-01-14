@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 120px 0px 0px 0px;
+  padding: 68px 0px 12px 0px;
 }
 .logo {
   font-size: 22px;
@@ -237,13 +237,16 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: center;
+    width: 75%;
   }
   .logo-bars li {
     list-style-type: none;
     display: block;
   }
   .logo {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .menu ul {
     display: flex;
@@ -399,5 +402,5 @@ Responsive tablet device
   /* company logo section */
   .all-logo-company {
     width: 100%;
-}
+  }
 }
